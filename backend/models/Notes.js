@@ -1,0 +1,12 @@
+const mongoose = require('mongoose')
+
+const notesSchema = new mongoose.Schema({
+    //we are using user feild as a foriegn key to achieve relation between these two tables
+    user : {type: mongoose.Schema.Types.ObjectId, ref: 'User'},
+    title : {type : String , required : true},
+    description : {type : String , required : true},
+    tag : {type : String},
+    date : {type : Date , default : Date.now}
+})
+
+module.exports = mongoose.model('Note',notesSchema)

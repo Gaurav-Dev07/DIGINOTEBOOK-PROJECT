@@ -1,0 +1,23 @@
+{
+  "name": "digi-notebook",
+  "version": "1.0.0",
+  "description": "This is notebook on the web",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon run server.js",
+    "start": "node server.js"
+  },
+  "author": "gaurav",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
